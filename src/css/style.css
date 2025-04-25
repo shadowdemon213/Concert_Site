@@ -1,0 +1,790 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto.woff2") format("woff2");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+}
+
+[data-theme="dark"] {
+    --bg-color: #1E1E1E;
+    --text-color: #ffffff;
+  }
+
+body {
+background-color: var(--bg-color);
+color: var(--text-color);
+transition: all 0.3s ease;
+overflow-x: hidden;
+font-family: Roboto;
+font-weight: 400;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+
+.header-container{
+    margin-bottom: 91px;
+    margin-top: 11px;
+}
+
+.header-container-vse{
+    margin-bottom: 66px;
+    margin-top: 11px;
+}
+
+.header-container-main {
+    display: flex;
+    padding: 0px 235px 0px;
+    width: 1920px;
+    height: 110px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.menubar {
+    margin-right: 195px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.menubar img {
+    width: 70px;
+    height: 70px;
+}
+
+.burger-btn {
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.location img {
+    width:29px;
+    height: 36px;
+    position: absolute;
+    top: 0;
+    margin-top: 29px;
+    margin-bottom: 45px;
+}
+
+.place p {
+    font-size: 22px;
+    width: 85px;
+    height: 110px;
+    margin-right: 269px;
+    font-weight: 700;
+    line-height: 110px;
+    margin-left: 31px;
+}
+
+.place-button {
+border: none;
+background-color: #fff;
+cursor: pointer;
+}
+
+.place-button:active {
+    color: #302f2f;
+}
+
+.logo img {
+    width: 150px;
+    height:110px;
+    margin-right: 157px;
+}
+
+.logo-button {
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+
+.search {
+    border: 3px solid rgba(0, 0, 0, 0.8);
+    border-radius: 30px;
+    overflow: hidden;
+    width: 320px;
+    height: 70px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    
+}
+
+.search-input {
+    border: none;
+    width: 259px;
+    height: 70px;
+    font-size: 21px;
+    text-align: center;
+    font-family: Montserrat;
+    cursor: pointer;
+}
+
+.search-input::placeholder{
+    text-align: center;
+    color: rgba(0, 0, 0, 37%);
+}
+
+.search-input:focus {
+    color: #000000;
+    outline: none;
+    border: none;
+}
+.search:hover {
+    border: 3.5px solid rgba(0, 0, 0, 1);
+}
+
+.search:active {
+    border: 3.5px solid rgba(0, 0, 0, 1);
+}
+
+.search-button {
+    width: 48px;
+    height: 48px;
+    background-color: white;
+    border: none; 
+    cursor: pointer;
+    margin-right: 11px 13px 11px 0px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.search-button:hover {
+    opacity: 1;
+}
+
+.icon {
+    width: 70px;
+    height: 70px;
+    margin-left: 103px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.icon img {
+    width: 70px;
+    height: 70px;
+}
+
+.icon-button {
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 235px 0px;
+    width: 1920px;
+    height: 2245px;
+    margin: 0 auto;
+}
+
+.main-full {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 321px 0px;
+    width: 1920px;
+    margin: auto;
+    height: 1647px;
+    margin-bottom: 60px;
+}
+
+.main-poisk {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    padding: 0px 321px 0px;
+    width: 1920px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 12px;
+    width: 1450px;
+    height: 58px;
+}
+
+h2 {
+    font-size: 36px;
+    text-align: center;
+    width: 1450px;
+    height: 58px;
+    margin-bottom: 40px;
+}
+
+h3 {
+    font-size: 25px;
+    text-align: left;
+    margin-bottom: 23px;
+    color: #fff;
+}
+
+.cards {
+    display: flex;
+    width: 1278px;
+    height: 180px;
+    margin: 0 auto;
+    gap: 81px;
+    margin-bottom: 88px;
+}
+
+.cards-full-last p {
+    font-size: 22px;
+    font-family: Montserrat;
+    text-align: center;
+    margin-bottom: 0;
+    width: 372px;
+    height: 57px;
+    margin: 26px 0px 26px;
+}
+
+.cards-full-last {
+    display: flex;
+    width: 1278px;
+    height: 180px;
+    margin: 0 auto;
+    gap: 81px;
+}
+
+.cards-full {
+    display: flex;
+    width: 1278px;
+    height: 180px;
+    margin: 0 auto;
+    gap: 81px;
+    margin-bottom: 60px;
+}
+
+.cards-full p {
+    font-size: 22px;
+    font-family: Montserrat;
+    text-align: center;
+    margin-bottom: 0;
+    width: 372px;
+    height: 57px;
+    margin: 26px 0px 26px;
+}
+
+.cards p {
+    font-size: 22px;
+    font-family: Montserrat;
+    text-align: center;
+    margin-bottom: 0;
+    width: 372px;
+    height: 57px;
+    margin: 26px 0px 26px;
+}
+
+.cards-poisk p {
+    font-size: 22px;
+    font-family: Montserrat;
+    text-align: center;
+    margin-bottom: 0;
+    width: 372px;
+    height: 57px;
+    margin: 26px 0px 26px;
+}
+
+.cards-poisk {
+    display: flex;
+    width: 1278px;
+    height: 180px;
+    margin: 0 auto;
+    gap: 81px;
+    margin-bottom: 88px;
+}
+
+.card1 {
+    background-color: #000;
+    color: #fff;
+    border-radius: 0px 0px 30px 30px;
+    width: 372px;
+    height: 180px;
+}
+
+.card2 {
+    background-color: #000;
+    color: #fff;
+    border-radius: 0px 0px 30px 30px;
+    width: 372px;
+    height: 180px;
+}
+
+.card3 {
+    background-color: #000;
+    color: #fff;
+    border-radius: 0px 0px 30px 30px;
+    width: 372px;
+    height: 180px;
+}
+
+.buttoncard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: Montserrat;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 30px;
+    width: 234px;
+    height: 50px;
+    margin: 0px 69px 21px;
+    cursor: pointer;
+}
+
+.buttoncard:active {
+    background-color: #f1f1f1;
+}
+
+.posters {
+    display: flex;
+    gap: 81px;
+}
+
+.poster-poisk {
+    display: flex;
+}
+
+.month-head {
+    display: flex;
+    width: 1184px;
+    height: 41px;
+    margin-bottom: 19px;
+    padding-left: 184px;
+    padding-right: 182px;
+    justify-content: space-between;
+}
+
+.month-head p {
+    font-family: Montserrat;
+    font-size: 34px;
+}
+
+.calendar-container {
+    display: flex;
+    gap: 250px;
+    margin-bottom: 59px;
+}
+  
+.month {
+    width: 467px;
+}
+  
+.month#may {
+    height: 389px;
+}
+  
+.month#june {
+    height: 389px;
+}
+  
+.weekdays, .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 34px;
+}
+  
+.days {
+height: 331px;
+}
+
+.weekdays div {
+    margin-bottom: 17px;
+}
+
+.weekend {
+    color: red;
+}
+  
+.day {
+    cursor: pointer;
+    margin-bottom: 17px;
+}
+  
+.day.selected {
+    background-color: #d1d0d0fd;
+    opacity: 1;
+    color: rgb(0, 0, 0);
+    border-radius: 3px;
+}
+  
+.day.in-range {
+    background-color: #d1d0d0fd;
+    opacity: 1;
+}
+  
+.day.first-in-range::after {
+    margin-left: 5px;
+}
+  
+.day.last-in-range::before {
+    margin-right: 5px;
+}
+
+.date {
+    width: 390px;
+    height: 62px;
+    background-color: #000000;
+    border-radius: 30px;
+    font-family: Montserrat;
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 117px;
+    cursor: pointer;
+}
+
+.date:active {
+    background-color: #1a1a1a;
+
+}
+
+.podval{
+    display: flex;
+    background-color: #000000;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 235px 0px;
+}
+
+.information {
+    display: flex;
+    padding: 0px 235px 0px;
+    width: 1920px;
+    height: 189px;
+    margin-bottom: 53px;
+    margin-top: 49px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 190px;
+}
+
+.information ul {
+    list-style: none;
+}
+
+.information a {
+    font-size: 17px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.information2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 235px 0px;
+    width: 1920px;
+    height: 30px;
+    margin-bottom: 23px;
+    color: #fff;
+    font-size: 17px;
+}
+
+.panel p {
+    height: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.panel {
+    display: flex;
+    align-items: center;  
+    justify-content: space-between;
+    height: 30px;
+    width: 1450px;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.language img{
+    width: 30px;
+    height: 30px;
+}
+
+.mail {
+    height: 20px;
+}
+
+ .mail a {
+    height: 30px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+
+
+.dropdown-menu {
+  position: fixed;
+  top: 120px;
+  left: 235px;
+  width: 250px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 10px 0;
+  display: none; 
+  flex-direction: column;
+  z-index: 1;
+}
+
+.menu-item {
+  padding: 12px 20px;
+  background: none;
+  border: none;
+  text-align: left;
+  font-family: Montserrat;
+  font-size: 22px;
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.menu-item:hover {
+  background: #f5f5f5;
+}
+
+.dropdown-menu.active {
+  display: flex;
+}
+
+.panel-vse-concert {
+    display: flex;
+    font-family: 'Montserrat';
+    width: 1920px;
+    height: 61px;
+    padding: 0px 235px;
+    margin: auto;
+    justify-content: space-between;
+  }
+.panel-vse-concert h2 {
+    margin:0px;
+    width: 276px;
+    height: 44px;
+
+}
+.panel-left {
+    display: flex;
+    gap: 64px;
+  }
+  
+.sort-filt-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 8px 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+  }
+   
+.filter-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+
+.sort-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+  
+.sort-filt-item p {
+    font-size: 24px;
+    color: #000000;
+    font-family: Montserrat;
+  }
+
+.line {
+    height: 1px;
+    background-color: #000000;
+    opacity: 0.7;
+    width: 1450px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.panel-poisk-concert {
+    display: flex;
+    font-family: 'Montserrat';
+    width: 1920px;
+    height: 61px;
+    padding: 0px 235px;
+    margin: auto;
+    justify-content: space-between;
+  }
+.panel-poisk-concert h2 {
+    margin:0px;
+    width: 637px;
+    height: 44px;
+
+}
+
+.reg {
+    height: 100%;
+    margin: 0;
+}
+
+.background {
+    background-image: url("../img/back.svg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw; 
+    position: absolute;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;  
+    position: absolute;
+    margin: 67px 685px 203px;     
+    width: 550px;
+    height: 810px; 
+    background-color: rgba(255, 255, 255);
+    padding: 40px 50px 36px;
+    border-radius: 30px;
+    text-align: right;
+}
+
+.login-form h2 {
+    text-align: center;
+    height: auto;
+    width: auto;
+    padding-bottom: 80px;
+}
+
+.email{
+    position: relative;
+    margin-bottom: 33px;
+}
+
+.password {
+    position: relative;
+    margin-bottom: 14px;
+}
+
+.input-field input {
+    width: 100%;
+    border: none;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    opacity: 0.4;  
+}
+
+.input-field input:focus {
+    outline: none;
+    opacity: 1;
+}
+
+.underline {
+    height: 2px;
+    background: #000000;
+    width: 100%; 
+    position: absolute; 
+    bottom: 0;
+    left: 0; 
+    opacity: 0.4;
+}
+
+.login-form .forgot-password {
+    text-align: right;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 700;
+    opacity: 0.4;
+    text-decoration: none;          
+}
+
+.login-form .forgot-password:hover {
+    opacity: 0.8;
+}
+
+.forgot-password a {
+    width: 450px;
+}
+
+.login-form button {
+    width: 450px;
+    height: 86px;
+    background-color: #000000;
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    margin-top: 100px;
+    cursor: pointer;
+}
+
+.login-form button:active {
+    background-color: #2c2c2c;
+}
+
+.makeacc p{
+    font-size: 24px;
+    text-align: left;
+    font-weight: 700;
+    opacity: 0.4;
+    margin-top: 54px;
+    text-align: center;
+}
+
+.makeacc p:hover{
+    opacity: 0.8;
+}
+
+.data p {
+    font-size: 32px;
+    text-align: left;
+    font-weight: 700;
+    margin-bottom:34px;
+}
